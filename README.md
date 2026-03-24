@@ -1,6 +1,3 @@
-Tienes razón. Corrijo el README para reflejar la estructura correcta de un proyecto PlatformIO con el código en `src/main.cpp`:
-
-```markdown
 # 🏠 Monitor de Consumo Eléctrico Doméstico con IA
 
 [![Platform](https://img.shields.io/badge/Platform-ESP32--S3-blue.svg)](https://www.espressif.com/en/products/socs/esp32-s3)
@@ -364,4 +361,3 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ---
 
 **Desarrollado con ❤️ para el monitoreo energético del hogar**
-```
