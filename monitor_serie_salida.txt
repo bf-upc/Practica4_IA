@@ -1,0 +1,57 @@
+=====================================================
+  Monitor Consumo Electrico + IA — ESP32-S3
+  FreeRTOS | EmonLib | FFT | TFLite | InfluxDB | WS
+=====================================================
+
+[SETUP] EmonLib OK
+[SETUP] Conectando WiFi......
+[SETUP] WiFi OK — IP: 192.168.100.141
+[SETUP] WebSocket en puerto 81
+[Task_ADC] Iniciada — 2 kHz ADC buffer doble
+[Task_Storage] Iniciada — 60s + InfluxDB
+[Task_Anomalia] Iniciada — umbral 15A / dI 8A / THD 15%
+[Task_DSP] Iniciada — RMS + FFT + THD + TFLite
+[SETUP] Sistema en marcha.
+[Task_Display] Iniciada — 1s serie + WebSocket
+
+[Task_Watchdog] Iniciado — reporte cada 5s
+!! ALARMA SOBRECARGA: 50.67 A
+!! ALARMA PICO: dI=50.67 A
+!! ALARMA THD: 216.7%
+[Task_DSP] I=50.67A P=4883W FP=0.42 THD=216.7% [Aire Acondicionado]
+[Task_DSP] I=44.94A P=4007W FP=0.39 THD=237.7% [Aire Acondicionado]
+[Task_DSP] I=37.92A P=3710W FP=0.43 THD=212.8% [Aire Acondicionado]
+[Task_DSP] I=32.41A P=2528W FP=0.34 THD=277.4% [Microondas]
+[Task_DSP] I=28.30A P=2221W FP=0.34 THD=275.4% [Microondas]
+[Task_DSP] I=23.13A P=1596W FP=0.30 THD=318.0% [Microondas]
++-------------------------------------------------+
+| Monitor ESP32-S3          Uptime:      1 s      |
++-------------------------+-----------------------+
+| Corriente RMS : 23.129 A | Tension   :   230 V |
+| Potencia act  : 1596.0 W | Pot. ap.  : 5319.7 VA|
+| Pot. reactiva : 5074.7 VAR| FP        : 0.300  |
+| THD           :  318.0 % |                       |
++-------------------------+-----------------------+
+| Dispositivo: Microondas                          |
++-------------------------------------------+-----+
+| Estado: *** ALARMA ACTIVA ***                    |
++-------------------------------------------------+
+
+[Task_DSP] I=21.56A P=1400W FP=0.28 THD=339.8% [Microondas]
+[Task_DSP] I=17.66A P=1523W FP=0.37 THD=247.3% [Microondas]
+[Task_DSP] I=16.63A P=933W FP=0.24 THD=397.5% [Microondas]
+[Task_DSP] I=13.70A P=1403W FP=0.45 THD=201.1% [Microondas]
+[Task_DSP] I=12.64A P=636W FP=0.22 THD=446.1% [Microondas]
+[Task_DSP] I=11.46A P=886W FP=0.34 THD=280.1% [Microondas]
++-------------------------------------------------+
+| Monitor ESP32-S3          Uptime:      2 s      |
++-------------------------+-----------------------+
+| Corriente RMS : 11.464 A | Tension   :   230 V |
+| Potencia act  :  886.5 W | Pot. ap.  : 2636.8 VA|
+| Pot. reactiva : 2483.3 VAR| FP        : 0.336  |
+| THD           :  280.1 % |                       |
++-------------------------+-----------------------+
+| Dispositivo: Microondas                          |
++-------------------------------------------+-----+
+| Estado: *** ALARMA ACTIVA ***                    |
++-------------------------------------------------+
